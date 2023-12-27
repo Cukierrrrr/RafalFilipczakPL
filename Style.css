@@ -309,7 +309,7 @@ footer{
 table #przeslanie{
     font-size: 0.9em;
 }
-.technologia{
+.technologia:hover{
     cursor: pointer;
 }
 @media(max-width: 1700px){

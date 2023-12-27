@@ -390,9 +390,6 @@ table #przeslanie{
     }           
 }
 @media(min-width: 1024px){
-    header button:hover{
-        border: 2px solid #04b604;
-    }
     header button:hover p{
         color:#04b604;
     }

@@ -309,6 +309,9 @@ footer{
 table #przeslanie{
     font-size: 0.9em;
 }
+.technologia{
+    cursor: pointer;
+}
 @media(max-width: 1700px){
     main h2, #kontakt h2{
         font-size: 2.2em;

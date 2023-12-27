@@ -343,6 +343,8 @@ const form = document.getElementById('formularz');
 const prze = document.getElementById('przeslanie');
 form.addEventListener('submit', e => {
     e.preventDefault()
+        prze.style.color = 'whitesmoke'
+        prze.innerHTML = 'Przesyłanie...';
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
     .then(response => {
         prze.style.color = '#04b604'

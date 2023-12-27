@@ -1,0 +1,775 @@
+body{
+    margin: 0;
+    font-family: 'Courier Prime', monospace;
+    background-color: #040204;
+    color: whitesmoke;
+    font-weight: 700;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar{
+    width: 0.4em;
+}
+::-webkit-scrollbar-track{
+    background:transparent
+}
+::-webkit-scrollbar-thumb{
+    background-color: #045604;
+    border-radius: 0.2em;
+}
+nav{
+    width: 100%;
+    height: 50px;
+    background-color: #040204;
+    position: fixed;
+    top: 0;
+}
+nav button{
+    height: 100%;
+    font-size: 1.6em;
+    border: none;
+    background:transparent;
+    color: whitesmoke;
+    font-family: 'Courier Prime', monospace;
+    transition: 250ms;
+    font-weight: 700;
+}
+button#link1:hover, button#link2:hover, button#link3:hover{
+    color:#04b604 ;
+}
+#jezyk{
+    float: right;
+    height: 100%;
+    font-size: 1.6em;
+    text-align: right;
+}
+#jezyk p,nav div p{
+    margin: 11px 6px;
+}
+#jezyk p img, nav div img{
+    height: 16px;
+    margin: 0 4px 0 8px;
+}
+nav div{
+    position: fixed;
+    top: 50px;
+    right: 0;
+    height: 80px;
+    background-color: rgba(4,2,4,0.5);
+    font-size: 1.6em;
+    transition: 250ms;
+    width: 189.59px;
+}
+nav div ul{
+    list-style-type: none;
+    padding-left: 9px;
+    margin: 5.5px 0;
+}
+nav div a{
+    color: whitesmoke;
+}
+#strzalka{
+    transition: 250ms;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/tlo.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+header h1{
+    font-size: 3em;
+    text-align: center;
+    color: whitesmoke;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+header p{
+    font-size: 2.5em;
+    margin: 10px;
+    color: whitesmoke;
+    font-family: 'Courier Prime', monospace;
+    transition: 250ms;
+    font-weight: 700;
+
+}
+header button{
+    background: transparent;
+    border: 2px solid whitesmoke;
+    margin-top: 10px;
+    transition: 250ms;    
+}
+header button:hover{
+    border: 2px solid #04b604;
+}
+header button:hover p{
+    color:#04b604;
+}
+main{
+    height: 100%;
+}
+main, #kontakt{
+    width: 84%;
+    padding: 0 8%;
+    background-color: #040204;
+}
+#omnie{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: row;
+}
+#omnie article{
+    width: 26%;
+    margin: 0 3.6%;
+    text-align: center;
+}
+#omnie article img{
+    width: 30%;
+    height: auto;
+}
+#umiejetnosci img, #kontakt img{
+    width: 8%;
+    height: auto;
+}
+#drugi img{
+    margin-top:2% ;
+}
+#umiejetnosci{
+    text-align: center;
+    padding-top:50px;
+    height: 500px;
+}
+#umiejetnosci ul{
+    list-style-type: none;
+    padding: 0;
+}
+#umiejetnosci li{
+    font-size: 1.7em;
+    font-weight: 700;
+    margin-right: 10px;
+    transition: 250ms;
+}
+.xd{
+    display:inline-block;
+}
+.xd:hover{
+    color:#04b604;
+}
+#kontakt{
+    padding: 25px 8%;
+    height: auto;
+    text-align: center;
+}
+#kontakt article img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+#kontakt article{
+    float: left;
+    text-align: left;
+}
+#facebook{
+    clear: left;
+}
+#github{
+    margin-left: 20px;
+}
+table{
+    font-size: 1.7em;
+    text-align: left;
+}
+input{
+    margin-bottom: 10px;
+    padding: 5px 14px 1px 14px;
+    font-size: 1.1em;
+    width: 90%;
+}
+input, textarea{  
+    font-family: 'Courier Prime', monospace;    
+    border: none;
+    background-color: whitesmoke;
+    border-radius: 0.2em;
+}
+textarea{
+    font-size: 1em;
+    padding: 5px 15px;
+    width: 89.7%;
+}
+#wyslij, #reset{
+    font-size: 0.8em;
+    padding: 7px 15px;
+    margin-right: 10px;
+    transition:500ms;
+    width: auto;
+}
+#wyslij:hover{
+    background-color: #04b604;
+    color: whitesmoke;
+}
+#reset:hover{
+    background-color: #b40404;
+    color: whitesmoke;
+}
+#kontakt h2, main h2{
+    font-size: 3em;
+    font-weight: 600;
+    margin-left: 10px;
+}
+#kontakt h2{
+    text-align: center;
+}
+article h2{
+    margin-left: 0;
+    font-size: 2.3em;
+}
+#kontakt p, main p{
+    font-size:1.7em;
+    font-weight: 600;
+}
+#jezyki{
+    text-align: center;
+}
+#jezyki p{
+    font-size: 1.2em;
+    margin: 0.5em;
+}
+#jezyki ul{
+    margin: 0.5em 0;
+}
+#umiejetnosci p img{
+    height: 25px;
+    width: auto;
+    position: relative;
+    top: 4px;
+}
+ul{
+    list-style-type: none;
+}
+.technologia{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+#umiejetnosci .technologia img{
+    height: 80%;
+    width: 80%;
+    margin: 10%;
+}
+#inne{
+    margin: 15% 10% 5% 10%;
+}
+.opis{
+    position: relative;
+    height: 60%;
+    width:100%;
+    top:-102.5%;
+    font-size: 45px;
+    border-radius: 50%;
+    background-color: transparent;
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 35%;
+    transition: 500ms;
+    opacity: 0;
+    font-weight: 400;
+}
+#kontakt article{
+    float: left;
+    width: 50%;
+}
+#frontend, #backend{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+#imie{
+    color:#04b604;
+}
+#email{
+    margin-top: 10px;
+}
+#linki{
+    display: flex;
+    justify-content: left;
+}
+footer{
+    width: 84%;
+    clear: both;
+    padding: 25px 8%;
+    font-size: 1.7em;
+    text-align: center;
+}
+table #przeslanie{
+    font-size: 0.9em;
+}
+@media(max-width: 1700px){
+    main h2, #kontakt h2{
+        font-size: 2.2em;
+    }
+}
+@media(max-width: 1621px){
+    main h2, #kontakt h2{
+        font-size: 2em;
+    }
+    main p, #kontakt p{
+        font-size: 1.6em;
+    }
+    table  #przeslanie{
+        font-size: 0.82em; 
+    }
+    #umiejetnosci li{
+        font-size:1.6em ;
+    }  
+}
+@media(max-width: 1469px){
+    main h2, #kontakt h2{
+        font-size: 1.8em;
+    }
+    main p, #kontakt p, table{
+        font-size: 1.4em;
+    }
+    table  #przeslanie{
+        font-size: 0.9em; 
+    }
+    #umiejetnosci li{
+        font-size:1.5em ;
+    }
+    table, footer{
+        font-size: 1.5em;
+    }
+    input{
+        width: 100%;
+    }
+    textarea{
+        width: 99.5%;
+    }
+    #wyslij, #reset{
+        width: auto;
+    }    
+}
+@media(max-width: 1253px){
+    main h2, #kontakt h2{
+        font-size: 1.6em;
+    }
+    main p, #kontakt p, table{
+        font-size: 1.3em;
+    }
+    table  #przeslanie{
+        font-size: 0.95em; 
+    }
+    #umiejetnosci li{
+        font-size:1.35em ;
+    }
+    #umiejetnosci{
+        height:450px;
+    }      
+}
+@media(max-width: 1180px){
+    main h2, #kontakt h2{
+        font-size: 1.4em;
+    }
+    main p, #kontakt p{
+        font-size: 1.1em;
+    }
+    table  #przeslanie{
+        font-size: 0.95em; 
+    }
+    #umiejetnosci li{
+        font-size:1.2em ;
+    }
+    table, footer{
+        font-size: 1.3m;
+    }
+    #kontakt article{
+        float: none;
+        margin-left: 20%;
+        margin-right: 20%;
+        width: 60%;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    #linki{
+        justify-content: center;
+    }
+    #kontakt article img{
+        width: 80px;
+        height: 80px;
+    }
+    #umiejetnosci{
+        height:415px;
+    }           
+}
+@media(max-width: 1080px){
+    #umiejetnosci{
+        height:380px;
+    }   
+}
+@media(max-width: 980px){
+    header h1{
+        font-size: 2.5em;
+    }
+    header p{
+        font-size: 2.1em;
+    }
+    #umiejetnosci li{
+        font-size:1.65em ;
+    }  
+    #omnie{
+        display: block;
+    }
+    #omnie article{
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    main h2, #kontakt h2{
+        font-size: 1.8em;
+    }
+    #pierwszy h2, #drugi h2{
+        margin-bottom: 0px;
+    }
+    main p, #kontakt p{
+        font-size: 1.5em;
+    }
+    #jezyki p{
+        font-size: 1.2em;
+    }
+    #jezyki p img{
+        height: 22px;
+        width: auto;
+    }
+    #omnie article img, #umiejetnosci img, #kontakt img{
+        width: 15%;
+    }
+    #umiejetnosci .technologia img{
+        width: 80%;
+        height: 80%;
+    }
+    .technologia{
+        height: 130px;
+        width: 130px;
+    }
+    .opis{
+        font-size: 35px;
+    }
+    #kontakt article{
+        margin-left: 15%;
+        margin-right: 15%;
+        width: 70%;
+    }
+    #kontakt article img{
+        width: 100px;
+        height: 100px;
+    }
+    input{
+        width: 45vw;
+    }
+    textarea{
+        width: 44.7vw;
+    }
+    #wyslij, #reset{
+        width: auto;
+    }
+    table  #przeslanie{
+        font-size: 1.08em; 
+    }   
+}
+@media(max-width: 840px){
+    #kontakt article{
+        margin-left: 12%;
+        margin-right: 12%;
+        width: 76%;
+    }
+    input{
+        width: 48vw;
+    }
+    textarea{
+        width: 47.7vw;
+    }
+    #wyslij, #reset{
+        width: auto;
+    }
+    table  #przeslanie{
+        font-size: 1.05em; 
+    }    
+}
+@media(max-width: 770px){
+    #kontakt article{
+        margin-left: 8%;
+        margin-right: 8%;
+        width: 84%;
+    }
+    input{
+        width: 53vw;
+    }
+    textarea{
+        width: 52.7vw;
+    }
+    #wyslij, #reset{
+        width: auto;
+    }
+    table  #przeslanie{
+        font-size: 1em; 
+    }    
+}
+@media(max-width: 700px){
+    header h1{
+        font-size: 2em;
+    }
+    header p{
+        font-size: 1.6em;
+    }
+    .technologia{
+        height: 100px;
+        width: 100px;
+    } 
+    #omnie article img{
+        width: 20%;
+    }
+    #umiejetnosci img, #kontakt img{
+        width: 15%;
+    }
+    #umiejetnosci .technologia img{
+        width: 80%;
+        height: 80%;
+    }
+    #umiejetnosci li{
+        font-size:1.4em ;
+    }  
+    nav button, nav div , #jezyk{
+        font-size: 1.5em;
+    }
+    nav div{
+        width: 173.59px;
+        top:47px;
+    }
+    #jezyk p img, nav div img{
+        height: 15px;
+    }
+    nav button{
+        padding-left:5px;
+        padding-right:5px ;
+    }
+    #kontakt article{
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 90%;
+    }
+    #umiejetnosci{
+        height:360px;
+    }
+    table  #przeslanie{
+        font-size: 0.9em; 
+    }       
+}
+@media(max-width: 655px){
+    #kontakt article{
+        margin-left: 0%;
+        margin-right: 0%;
+        width: 100%;
+    }
+}
+@media(max-width: 590px){
+    input{
+        width: 60vw;
+    }
+    #wyslij, #reset{
+        width: auto;
+    }
+    textarea{
+        width: 59.7vw;
+    }
+    #umiejetnosci{
+        height:320px;
+    }
+    nav button{
+        padding:2px 1px;
+    }
+    nav button, nav div , #jezyk{
+        font-size: 1.4em;
+    }
+    nav div{
+        width: 157.59px;
+        top:46px;
+    }
+    #jezyk p img, nav div img{
+        height: 13px;
+    }
+    table  #przeslanie{
+        font-size: 0.9em; 
+    }  
+}
+@media(max-width: 538px){
+    header h1{
+        font-size: 1.6em;
+    }
+    header p{
+        font-size: 1.3em;
+    }
+    .technologia{
+        height: 80px;
+        width: 80px;
+    }
+    #umiejetnosci li{
+        font-size:1.25em ;
+    }  
+    .opis{
+        font-size: 30px;
+    }
+    main p{
+        font-size: 1.3em;
+    }
+    #umiejetnosci{
+        height:300px;
+    }
+    nav button, nav div , #jezyk{
+        font-size: 1.1em;
+    }
+    nav div{
+        width: 137.59px;
+        top: 44px;
+    }
+    #jezyk p img, nav div img{
+        height: 10px;
+    }
+    table  #przeslanie{
+        font-size: 1em;
+    }
+    input{
+        width: 57vw;
+    }
+    textarea{
+        width: 56.7vw;
+    }
+    #wyslij, #reset{
+        width: auto;
+    }      
+}
+@media(max-width: 463px){
+    #kontakt article p{
+        font-size: 1.1em;
+    }
+    #umiejetnosci li{
+        font-size:1em ;
+    }
+    header h1{
+        font-size: 1.4em;
+    }
+    header p{
+        font-size: 1.2em;
+    }
+    nav button, nav div , #jezyk{
+        font-size: 1.2em;
+    }
+    #jezyki p{
+        font-size: 1.2em;
+    }
+    main h2{
+        font-size: 1.6em;
+    }
+    main p{
+        font-size: 1.2em;
+    }
+    #umiejetnosci{
+        height:275px;
+    }
+    #kontakt article img{
+        width: 70px;
+        height: 70px;
+    }
+    #umiejetnosci p img{
+        height: 15px;
+    }
+    nav button, nav div , #jezyk{
+        font-size: 0.95em;
+    }
+    nav div{
+        width: 125.59px;
+        top:42px;
+    }
+    #jezyk p img, nav div img{
+        height: 10px;
+    }
+    table  #przeslanie{
+        font-size: 0.85em;
+        padding-right: 100px;
+    }
+    input{
+        width: 59vw;
+    }
+    textarea{
+        width: 58.7vw;
+    }
+    #wyslij, #reset{
+        width: auto;
+    }      
+}
+@media(max-width: 390px){
+    main h2{
+        font-size: 1.5em;
+    }
+    main p{
+        font-size: 1.1em;
+    }
+    header h1{
+        font-size: 1.2em;
+    }
+    #umiejetnosci li{
+        font-size:0.9em ;
+    }
+    #jezyki p{
+        font-size: 1em;
+    }
+    input{
+        width: auto;
+    }
+    #wyslij, #reset{
+        width: auto;
+        padding: 10px 6px;
+    }
+    textarea{
+        width: 13.2em;
+    }
+    input, textarea{
+        font-size: 0.8em;
+    }
+    #umiejetnosci{
+        height:250px;
+    }
+    nav button{
+        padding-left:0px;
+        padding-right:0px ;
+    }
+    nav button, nav div , #jezyk{
+        font-size: 0.9em;
+    }
+    nav div{
+        width: 118.59px;
+        top:40px;
+    }
+    #jezyk p img, nav div img{
+        height: 10px;
+    }
+    footer{
+        font-size: 1.2em;
+    }
+    table  #przeslanie{
+        font-size: 0.75em;
+    }
+    input{
+        width: 57vw;
+    }
+    textarea{
+        width: 56.7vw;
+    }
+    #wyslij, #reset{
+        width: auto;
+    }            
+}

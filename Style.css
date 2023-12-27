@@ -409,7 +409,16 @@ table #przeslanie{
 @media(max-width: 1080px){
     #umiejetnosci{
         height:380px;
-    }   
+    }
+    header button:hover{
+        border: 2px solid #04b604;
+    }
+    header button:hover p{
+        color:#04b604;
+    }
+    button#link1:hover, button#link2:hover, button#link3:hover{
+        color:#04b604 ;
+    }
 }
 @media(max-width: 980px){
     header h1{

@@ -33,9 +33,6 @@ nav button{
     transition: 250ms;
     font-weight: 700;
 }
-button#link1:hover, button#link2:hover, button#link3:hover{
-    color:#04b604 ;
-}
 #jezyk{
     float: right;
     height: 100%;
@@ -105,12 +102,6 @@ header button{
     margin-top: 10px;
     transition: 250ms;    
 }
-header button:hover{
-    border: 2px solid #04b604;
-}
-header button:hover p{
-    color:#04b604;
-}
 main{
     height: 100%;
 }
@@ -157,9 +148,6 @@ main, #kontakt{
 }
 .xd{
     display:inline-block;
-}
-.xd:hover{
-    color:#04b604;
 }
 #kontakt{
     padding: 25px 8%;
@@ -208,14 +196,6 @@ textarea{
     margin-right: 10px;
     transition:500ms;
     width: auto;
-}
-#wyslij:hover{
-    background-color: #04b604;
-    color: whitesmoke;
-}
-#reset:hover{
-    background-color: #b40404;
-    color: whitesmoke;
 }
 #kontakt h2, main h2{
     font-size: 3em;
@@ -409,18 +389,31 @@ table #przeslanie{
         height:415px;
     }           
 }
+@media(min-width: 1024px){
+    header button:hover{
+        border: 2px solid #04b604;
+    }
+    header button:hover p{
+        color:#04b604;
+    }
+    button#link1:hover, button#link2:hover, button#link3:hover{
+        color:#04b604;
+    }
+    .xd:hover{
+        color:#04b604;
+    }
+    #wyslij:hover{
+        background-color: #04b604;
+        color: whitesmoke;
+    }
+    #reset:hover{
+        background-color: #b40404;
+        color: whitesmoke;
+    }
+}
 @media(max-width: 1080px){
     #umiejetnosci{
         height:380px;
-    }
-    header button:hover{
-        border: 2px solid whitesmoke;
-    }
-    header button:hover p{
-        color:whitesmoke;
-    }
-    button#link1:hover, button#link2:hover, button#link3:hover{
-        color:whitesmoke;
     }
 }
 @media(max-width: 980px){

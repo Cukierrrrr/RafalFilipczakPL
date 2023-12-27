@@ -340,32 +340,16 @@ window.addEventListener("load", function(){
 // obsługa formularza
 const scriptURL = 'https://script.google.com/macros/s/AKfycbwndeqTXhWctOAAF1qChJusjGNy2GGxQh_mBuxd1lNbCWBxNM9JnyFRzHzgmd-YBTtKKw/exec'
 const form = document.getElementById('formularz');
-if(document.getElementById("xdddd").innerHTML == "Kontakt"){
-    var jezykk = 'pl';
-}
-else{
-    var jezykk = 'en';
-}
 const prze = document.getElementById('przeslanie');
 form.addEventListener('submit', e => {
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
     .then(response => {
         prze.style.color = '#04b604'
-        if(jezykk == 'pl'){
-            prze.innerHTML = 'Twój Formularz został przesłany';
-        }
-        else{
-            prze.innerHTML = 'Your Form has been sent'
-        }
+        prze.innerHTML = 'Twój Formularz został przesłany';
     })
     .catch(errror => {
         prze.style.color = '#b40404'
-        if(jezykk == 'pl'){
-            prze.innerHTML = 'Błąd przesyłania, spróbuj ponownie';
-        }
-        else{
-            prze.innerHTML = 'Sending error, try again'
-        }
+        prze.innerHTML = 'Błąd przesyłania, spróbuj ponownie';
     })
 }) 

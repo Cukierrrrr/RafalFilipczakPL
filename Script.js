@@ -156,7 +156,7 @@ window.addEventListener("load", function(){
             else if(l == 1){
                 d.parentElement.style.border = '2px solid whitesmoke';
                 d.parentElement.addEventListener('mouseenter', function(){
-                    console.log(screem.width)
+                    console.log(window.width)
                     if(screem.width>1024){
                         d.parentElement.style.border = '2px solid #04b604';
                     }

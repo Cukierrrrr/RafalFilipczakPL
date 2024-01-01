@@ -295,6 +295,9 @@ table #przeslanie{
 #przedimie, #imie, #poimie, #przycisk{
     opacity: 0;
 }
+.xd:hover{
+    cursor: pointer;
+}
 @media(max-width: 1700px){
     main h2, #kontakt h2{
         font-size: 2.2em;

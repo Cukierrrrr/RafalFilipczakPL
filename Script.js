@@ -119,6 +119,10 @@ window.addEventListener("load", function(){
     let b = document.getElementById("imie");
     let c = document.getElementById("poimie");
     let d = document.getElementById("przycisk").firstChild;
+    a.style.opacity = '1';
+    b.style.opacity = '1';
+    c.style.opacity = '1';
+    d.parentElement.style.opacity = '1';
     let al = a.innerHTML;
     let all = al.length;
     a.innerHTML='';

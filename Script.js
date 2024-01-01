@@ -115,8 +115,6 @@ wybor.children[2].addEventListener('click',function(){
 })
 //dodanie animacji wypisywania tekstu w nagłówku
 window.addEventListener("load", function(){
-    let preloader = document.getElementById("loader");
-    preloader.style.display = "none";
     let a = document.getElementById("przedimie");
     let b = document.getElementById("imie");
     let c = document.getElementById("poimie");

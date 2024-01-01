@@ -212,7 +212,6 @@ document.getElementById("jezyk").addEventListener("click", function(){
     else{
         document.getElementById('blod').innerHTML = '<img src="img/wielkabrytania.png" alt="UK flag"> English - B2 level';
     }
-})
 // obsługa formularza
 const scriptURL = 'https://script.google.com/macros/s/AKfycbwndeqTXhWctOAAF1qChJusjGNy2GGxQh_mBuxd1lNbCWBxNM9JnyFRzHzgmd-YBTtKKw/exec'
 const form = document.getElementById('formularz');

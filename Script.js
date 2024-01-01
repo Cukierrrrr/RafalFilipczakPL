@@ -205,13 +205,6 @@ document.getElementById("jezyk").addEventListener("click", function(){
         setTimeout(() => { xdd.style.display = 'none';}, 250);
     }
 })
-// naprawa błędu(brak wyświetlania treści)
-    if(g == 'Umiejętnosci'){
-        document.getElementById('blod').innerHTML = '<img src="img/wielkabrytania.png" alt="flaga wielkiej brytanii"> Angielski - Poziom B2';
-    }
-    else{
-        document.getElementById('blod').innerHTML = '<img src="img/wielkabrytania.png" alt="UK flag"> English - B2 level';
-    }
 // obsługa formularza
 const scriptURL = 'https://script.google.com/macros/s/AKfycbwndeqTXhWctOAAF1qChJusjGNy2GGxQh_mBuxd1lNbCWBxNM9JnyFRzHzgmd-YBTtKKw/exec'
 const form = document.getElementById('formularz');

@@ -47,10 +47,28 @@ for (let technologia of technologie){
             opis.style.display = "block";
             obrazek.style.webkitFilter = 'brightness(50%)';
             setTimeout(() => { opis.style.opacity = '0.7' }, 1);
+            var x = parseInt(opis.innerHTML.charAt(0) + opis.innerHTML.charAt(1));
+            var y = 0;
+            opis.innerHTML = '00%';
+            var z = setInterval(() => {
+                opis.innerHTML = String(++y)+'%';
+                if(y == x){
+                    clearInterval(z);
+                } 
+            }, 250/x)
         }
         else{
             opis.style.opacity = '0';
-            setTimeout(() => { opis.style.display = "none"; }, 250);
+            var x = parseInt(opis.innerHTML.charAt(0) + opis.innerHTML.charAt(1));
+            var y = x;
+            var z = setInterval(() => {
+                opis.innerHTML = String(--y)+'%';
+                if(y == 0){
+                    clearInterval(z);
+                    opis.innerHTML = String(x)+'%'; 
+                } 
+            }, 250/x)
+            setTimeout(() => {opis.style.display = "none"; }, 250);
             obrazek.style.webkitFilter = 'brightness(100%)';
         }
     });

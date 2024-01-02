@@ -196,6 +196,7 @@ textarea{
     margin-right: 10px;
     transition:500ms;
     width: auto;
+    color: black;
 }
 #kontakt h2, main h2{
     font-size: 3em;

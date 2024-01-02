@@ -215,15 +215,15 @@ const form = document.getElementById('formularz');
 const prze = document.getElementById('przeslanie');
 form.addEventListener('submit', e => {
     e.preventDefault()
-    prze.style.color = 'Przesyłanie...'
-    prze.innerHTML = 'Sending...';
+    prze.style.color = 'whitesmoke';
+    prze.innerHTML = 'Przesyłanie...;
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
     .then(response => {
-        prze.style.color = '#04b604'
-        prze.innerHTML = 'Twój Formularz został przesłany'
+        prze.style.color = '#04b604';
+        prze.innerHTML = 'Twój Formularz został przesłany';
     })
     .catch(errror => {
-        prze.style.color = '#b40404'
-        prze.innerHTML = 'Błąd przesyłania, spróbuj ponownie'
+        prze.style.color = '#b40404';
+        prze.innerHTML = 'Błąd przesyłania, spróbuj ponownie';
     })
 }) 

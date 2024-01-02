@@ -150,7 +150,7 @@ main, #kontakt{
     display:inline-block;
 }
 #kontakt{
-    padding: 25px 8%;
+    padding: 40px 8% 0 8%;
     height: auto;
     text-align: center;
 }

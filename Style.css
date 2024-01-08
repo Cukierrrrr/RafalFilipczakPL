@@ -55,6 +55,8 @@ nav div{
     font-size: 1.6em;
     transition: 250ms;
     width: 189.59px;
+    opacity: 0;
+    display: none;
 }
 nav div ul{
     list-style-type: none;

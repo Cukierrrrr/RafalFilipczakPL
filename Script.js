@@ -193,8 +193,6 @@ window.addEventListener("load", function(){
     }, 70 * all + 70 * bll + 70 * cll);
 })
 //dodanie listy wybieranej do zmiany języka
-document.getElementById("xdd").style.display = 'none';
-document.getElementById("xdd").style.opacity = '0';
 document.getElementById("xdd").style.transition = '250ms';
 document.getElementById("jezyk").addEventListener("click", function(){
     xdd = document.getElementById("xdd");

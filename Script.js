@@ -219,9 +219,9 @@ form.addEventListener('submit', e => {
     .then(response => {
         prze.style.color = '#04b604';
         prze.innerHTML = 'Twój Formularz został przesłany';
-        //document.getElementsByName("email")[0].value = '';
-        //document.getElementsByName("temat")[0].value = '';
-        //document.getElementsByName("tresc")[0].value = '';
+        document.getElementsByName("email")[0].value = '';
+        document.getElementsByName("temat")[0].value = '';
+        document.getElementsByName("tresc")[0].value = '';
     })
     .catch(errror => {
         prze.style.color = '#b40404';

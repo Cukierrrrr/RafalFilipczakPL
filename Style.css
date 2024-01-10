@@ -701,6 +701,17 @@ table #przeslanie{
         margin-right: 0%;
         width: 100%;
     }
+    #PDA{
+        width: calc(80vw * 0.84);
+        height: calc(48.9vw * 0.84);
+        margin-left: 10%;
+    }
+    #PDA div p{
+        margin: 10px 0;
+    }
+    nav button, nav div , #jezyk{
+        font-size: 1.05em;
+    }    
 }
 @media(max-width: 590px){
     input{
@@ -718,8 +729,8 @@ table #przeslanie{
     nav button{
         padding:2px 1px;
     }
-    nav button, nav div , #jezyk{
-        font-size: 1.4em;
+    #xdd ul{
+        padding-left:1px;
     }
     nav div{
         width: 157.59px;
@@ -730,7 +741,16 @@ table #przeslanie{
     }
     table  #przeslanie{
         font-size: 0.9em; 
-    }  
+    }
+    #PDA div p, #PDA div a button{
+        font-size: 0.95em;
+    }
+    #PDA div h3{
+        font-size: 1.05em;
+    }
+    #PDA div h3{
+        margin:15px 0;
+    }   
 }
 @media(max-width: 538px){
     header h1{
@@ -756,7 +776,7 @@ table #przeslanie{
         height:300px;
     }
     nav button, nav div , #jezyk{
-        font-size: 1.1em;
+        font-size: 0.95em;
     }
     nav div{
         width: 137.59px;
@@ -776,7 +796,23 @@ table #przeslanie{
     }
     #wyslij, #reset{
         width: auto;
-    }      
+    }
+    #PDA div p, #PDA div a button{
+        font-size: 0.85em;
+    }
+    #PDA div h3{
+        font-size: 1em;
+    }
+    #PDA div p{
+        margin: 5px 0;
+    }
+    #PDA div h3{
+        margin:10px 0;
+    }  
+    #PDA div{
+        width: 90%;
+        padding: 2.5% 5%;
+    } 
 }
 @media(max-width: 463px){
     #kontakt article p{
@@ -813,9 +849,6 @@ table #przeslanie{
     #umiejetnosci p img{
         height: 15px;
     }
-    nav button, nav div , #jezyk{
-        font-size: 0.95em;
-    }
     nav div{
         width: 125.59px;
         top:42px;
@@ -835,7 +868,17 @@ table #przeslanie{
     }
     #wyslij, #reset{
         width: auto;
-    }      
+    }
+    #PDA div p, #PDA div a button{
+        font-size: 0.75em;
+    }
+    #PDA div h3{
+        font-size: 0.9em;
+        margin:5px 0;
+    }
+    nav button, nav div , #jezyk{
+        font-size: 0.85em;
+    }    
 }
 @media(max-width: 390px){
     main h2{
@@ -873,8 +916,8 @@ table #przeslanie{
         padding-left:0px;
         padding-right:0px ;
     }
-    nav button, nav div , #jezyk{
-        font-size: 0.9em;
+    #xdd ul{
+        padding-left:0px;
     }
     nav div{
         width: 118.59px;
@@ -897,5 +940,17 @@ table #przeslanie{
     }
     #wyslij, #reset{
         width: auto;
-    }            
+    }
+    #PDA div p, #PDA div a button{
+        font-size: 0.7em;
+    }
+    #PDA div p{
+        margin: 0;
+    }
+    #PDA div h3{
+        margin: 0;
+    }
+    nav button, nav div , #jezyk{
+        font-size: 0.75em;
+    }    
 }

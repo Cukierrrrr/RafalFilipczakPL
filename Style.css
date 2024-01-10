@@ -60,7 +60,7 @@ nav div{
 }
 nav div ul{
     list-style-type: none;
-    padding-left: 9px;
+    padding-left: 6px;
     margin: 5.5px 0;
 }
 nav div a{
@@ -150,6 +150,53 @@ main, #kontakt{
 }
 .xd{
     display:inline-block;
+}
+#projekty{
+    text-align: center;
+    padding-top:50px;
+}
+#PDA{
+    width: calc(50vw * 0.84);
+    height: calc(30.6vw * 0.84);
+    background: linear-gradient(rgba(1,1,1,0), rgba(1,1,1,0)), url(img/PDA.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 2vw;
+    margin-left: 25%;
+    cursor: pointer;
+}
+#PDA div{
+    background-color: rgba(4, 2, 4, 0);
+    width: 80%;
+    height: 93%;
+    border-radius:1.52vw ;
+    transition: 250ms;
+    padding: 2.5% 10%;
+}
+#PDA div p{
+    font-size: 1.5em;
+    opacity: 0;
+    transition: 250ms;
+    margin: 25px 0;
+}
+#PDA div h3{
+    font-size: 1.8em;
+    opacity: 0;
+    transition: 250ms;
+}
+#PDA div a button{
+    font-size: 1.5em;
+    opacity: 0;
+    transition: 250ms;
+    margin-top: 10px;
+    background-color: transparent;
+    border: whitesmoke 2px solid;
+    border-radius: 50vh;
+    color: whitesmoke;
+    font-family: 'Courier Prime', monospace;
+    font-weight: 600;
+    padding: 3px 8px;
+    cursor: pointer;
 }
 #kontakt{
     padding-top: 40px;
@@ -344,7 +391,13 @@ table #przeslanie{
     }
     #wyslij, #reset{
         width: auto;
-    }    
+    }
+    #PDA div h3{
+        margin:20px 0;
+    }
+    #PDA div p{
+    margin: 12px 0;
+    }
 }
 @media(max-width: 1253px){
     main h2, #kontakt h2{
@@ -361,7 +414,15 @@ table #przeslanie{
     }
     #umiejetnosci{
         height:450px;
-    }      
+    }
+    #PDA{
+        width: calc(60vw * 0.84);
+        height: calc(36.7vw * 0.84);
+        margin-left: 20%;
+    }
+    #PDA div p{
+        margin: 25px 0;
+        } 
 }
 @media(max-width: 1180px){
     main h2, #kontakt h2{
@@ -396,7 +457,13 @@ table #przeslanie{
     }
     #umiejetnosci{
         height:415px;
-    }           
+    }
+    #PDA div p, #PDA div a button{
+        font-size: 1.4em;
+    }
+    #PDA div h3{
+        font-size: 1.7em;
+    } 
 }
 @media(min-width: 1024px){
     header button:hover{
@@ -418,6 +485,10 @@ table #przeslanie{
     #reset:hover{
         background-color: #b40404;
         color: whitesmoke;
+    }
+    #PDA div a button:hover{
+        border: 2px #04b604 solid;
+        color: #04b604;
     }
 }
 @media(max-width: 1080px){

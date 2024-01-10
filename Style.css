@@ -495,6 +495,15 @@ table #przeslanie{
     #umiejetnosci{
         height:380px;
     }
+    #PDA div p, #PDA div a button{
+        font-size: 1.3em;
+    }
+    #PDA div h3{
+        font-size: 1.5em;
+    }
+    #PDA div p{
+        margin: 15px 0;
+    } 
 }
 @media(max-width: 980px){
     header h1{
@@ -564,7 +573,13 @@ table #przeslanie{
     }
     table  #przeslanie{
         font-size: 1.08em; 
-    }   
+    }
+    #PDA div p, #PDA div a button{
+        font-size: 1.1em;
+    }
+    #PDA div h3{
+        font-size: 1.3em;
+    }  
 }
 @media(max-width: 840px){
     #kontakt article{
@@ -583,7 +598,21 @@ table #przeslanie{
     }
     table  #przeslanie{
         font-size: 1.05em; 
-    }    
+    }
+    #PDA{
+        width: calc(70vw * 0.84);
+        height: calc(42.8vw * 0.84);
+        margin-left: 15%;
+    }
+    #PDA div p, #PDA div a button{
+        font-size: 1.2em;
+    }
+    #PDA div h3{
+        font-size: 1.4em;
+    }
+    nav button, nav div , #jezyk{
+        font-size: 1.5em;
+    }  
 }
 @media(max-width: 770px){
     #kontakt article{
@@ -602,7 +631,16 @@ table #przeslanie{
     }
     table  #przeslanie{
         font-size: 1em; 
-    }    
+    }
+    #PDA div p, #PDA div a button{
+        font-size: 1em;
+    }
+    #PDA div h3{
+        font-size: 1.2em;
+    }
+    nav button, nav div , #jezyk{
+        font-size: 1.4em;
+    }
 }
 @media(max-width: 700px){
     header h1{
@@ -628,9 +666,6 @@ table #przeslanie{
     #umiejetnosci li{
         font-size:1.4em ;
     }  
-    nav button, nav div , #jezyk{
-        font-size: 1.5em;
-    }
     nav div{
         width: 173.59px;
         top:47px;
@@ -642,6 +677,9 @@ table #przeslanie{
         padding-left:5px;
         padding-right:5px ;
     }
+    #xdd ul{
+        padding-left:5px;
+    }
     #kontakt article{
         margin-left: 5%;
         margin-right: 5%;
@@ -652,7 +690,10 @@ table #przeslanie{
     }
     table  #przeslanie{
         font-size: 0.9em; 
-    }       
+    }
+    nav button, nav div , #jezyk{
+        font-size: 1.25em;
+    }   
 }
 @media(max-width: 655px){
     #kontakt article{

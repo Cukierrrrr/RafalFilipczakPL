@@ -31,6 +31,12 @@ document.getElementById("link2").addEventListener("click",function(event){
 document.getElementById("link3").addEventListener("click",function(event){
     event.preventDefault()
     let moveTo = new MoveTo();
+    let target = document.getElementById('projekty');
+    moveTo.move(target);
+});
+document.getElementById("link4").addEventListener("click",function(event){
+    event.preventDefault()
+    let moveTo = new MoveTo();
     let target = document.getElementById('kontakt');
     moveTo.move(target);
 });
@@ -196,15 +202,63 @@ window.addEventListener("load", function(){
 document.getElementById("xdd").style.transition = '250ms';
 document.getElementById("jezyk").addEventListener("click", function(){
     xdd = document.getElementById("xdd");
-    if(xdd.style.display == 'none'){
-        document.getElementById("strzalka").style.rotate = '-90deg'
-        xdd.style.display = 'block';
-        setTimeout(() => { xdd.style.opacity = 1;}, 1);
-    }
-    else{
+    if(xdd.style.display == 'block'){
         document.getElementById("strzalka").style.rotate = '0deg'
         xdd.style.opacity = 0;
         setTimeout(() => { xdd.style.display = 'none';}, 250);
+    }
+    else{
+        document.getElementById("strzalka").style.rotate = '-90deg'
+        xdd.style.display = 'block';
+        xdd.style.width = document.getElementById('jezyk').offsetWidth + 'px';
+        setTimeout(() => { xdd.style.opacity = 1;}, 1);
+    }
+})
+// zwijanie nazwy języka
+if(window.innerWidth <= 463){
+    document.querySelector('#jezyk p').innerHTML = '<img src="img/polska.png" alt="flaga polski"><img src="img/strzalka.png" alt="strzałka" id="strzalka">';
+    document.querySelectorAll('#xdd ul li p')[0].innerHTML = '<img src="img/polska.png" alt="flaga polski">';
+    document.querySelectorAll('#xdd ul li')[0].style.textAlign = 'right';
+    document.querySelectorAll('#xdd ul li p')[0].style.marginRight = '29px';
+    document.querySelectorAll('#xdd ul li p')[1].innerHTML = '<img src="img/wielkabrytania.png" alt="flaga wielkiej brytanii">';
+    document.querySelectorAll('#xdd ul li')[1].style.textAlign = 'right';
+    document.querySelectorAll('#xdd ul li p')[1].style.marginRight = '29px';
+}
+window.addEventListener("resize", function(){
+    if(window.innerWidth <= 463){
+        document.querySelector('#jezyk p').innerHTML = '<img src="img/polska.png" alt="flaga polski"><img src="img/strzalka.png" alt="strzałka" id="strzalka">';
+        document.querySelectorAll('#xdd ul li p')[0].innerHTML = '<img src="img/polska.png" alt="flaga polski">';
+        document.querySelectorAll('#xdd ul li')[0].style.textAlign = 'right';
+        document.querySelectorAll('#xdd ul li p')[0].style.marginRight = '29px';
+        document.querySelectorAll('#xdd ul li p')[1].innerHTML = '<img src="img/wielkabrytania.png" alt="flaga wielkiej brytanii">';
+        document.querySelectorAll('#xdd ul li')[1].style.textAlign = 'right';
+        document.querySelectorAll('#xdd ul li p')[1].style.marginRight = '29px';
+    }
+    else{
+        document.querySelector('#jezyk p').innerHTML = '<img src="img/polska.png" alt="flaga polski">POLSKI<img src="img/strzalka.png" alt="strzałka" id="strzalka">';
+        document.querySelectorAll('#xdd ul li p')[0].innerHTML = '<img src="img/polska.png" alt="flaga polski">POLSKI';
+        document.querySelectorAll('#xdd ul li')[0].style.textAlign = 'left';
+        document.querySelectorAll('#xdd ul li p')[0].style.marginRight = '0';
+        document.querySelectorAll('#xdd ul li p')[1].innerHTML = '<img src="img/wielkabrytania.png" alt="flaga wielkiej brytanii">ENGLISH';
+        document.querySelectorAll('#xdd ul li')[1].style.textAlign = 'left';
+        document.querySelectorAll('#xdd ul li p')[1].style.marginRight = '0';
+    }
+    xdd.style.width = document.getElementById('jezyk').offsetWidth + 'px';
+})
+// opis projektu
+document.getElementById("PDA").addEventListener("click", function(){
+    pda = document.querySelector("#PDA div");
+    if(pda.style.background == "rgba(4, 2, 4, 0.7)"){
+        pda.style.background = "rgba(4, 2, 4, 0)";
+        document.querySelector("#PDA:hover div p").style.opacity = 0;
+        document.querySelector("#PDA:hover div h3").style.opacity = 0;
+        document.querySelector("#PDA:hover div a button").style.opacity = 0;
+    }
+    else{
+        pda.style.background = "rgba(4, 2, 4, 0.7)";
+        document.querySelector("#PDA:hover div p").style.opacity = 1;
+        document.querySelector("#PDA:hover div h3").style.opacity = 1;
+        document.querySelector("#PDA:hover div a button").style.opacity = 1;
     }
 })
 // obsługa formularza

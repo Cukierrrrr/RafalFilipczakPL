@@ -261,6 +261,15 @@ document.getElementById("PDA").addEventListener("click", function(){
         document.querySelector("#PDA:hover div a button").style.opacity = 1;
     }
 })
+// ostrzerzenie o braku responsywności PDA
+let proba = false;
+document.querySelector('#PDA div a').addEventListener('click', function(event){
+    if (window.innerWidth < 720 && !proba) {
+        event.preventDefault();
+        alert("Uwaga strona ta nie jest responsywna");
+        proba = true;
+    }
+})
 // obsługa formularza
 const scriptURL = 'https://script.google.com/macros/s/AKfycbwndeqTXhWctOAAF1qChJusjGNy2GGxQh_mBuxd1lNbCWBxNM9JnyFRzHzgmd-YBTtKKw/exec'
 const form = document.getElementById('formularz');

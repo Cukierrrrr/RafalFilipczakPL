@@ -271,7 +271,7 @@ document.querySelector('#PDA div a').addEventListener('click', function(event){
     }
 })
 // obsługa formularza
-const scriptURL = 'https://script.google.com/macros/s/AKfycbwndeqTXhWctOAAF1qChJusjGNy2GGxQh_mBuxd1lNbCWBxNM9JnyFRzHzgmd-YBTtKKw/exec'
+const scriptURL = 'https://script.google.com/macros/s/AKfycbw52RYLO1hV_cW4WrPbHSRsc4szvTaILJJgPBPgWJrOACn2hyDw15nqZtdSAtxvIn9Yeg/exec'
 const form = document.getElementById('formularz');
 const prze = document.getElementById('przeslanie');
 form.addEventListener('submit', e => {
